@@ -21,7 +21,7 @@ const HeroSection = () => {
                         Welcome to <span className='text-green-500'>PowerPlay</span> Cricket Stadium
                     </h1>
                     <p className="text-lg sm:text-xl md:text-2xl">
-Experience world-class facilities and play your favorite game on Bikaner’s first 360-degree turf. Powered by AG KHAN CRICKET ACADEMY, Bikaner’s premier and first high-tech cricket academy, join us for a day of fun, excitement, and expert training!                    </p>
+Experience world-class facilities and play your favorite game on Bikaner&rsquo;s first 360-degree turf. Powered by AG KHAN CRICKET ACADEMY, Bikaner&rsquo;s premier and first high-tech cricket academy, join us for a day of fun, excitement, and expert training!                    </p>
                     <button className="relative bg-white text-green-500 font-semibold px-8 py-3 rounded-md overflow-hidden group">
                         <span className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-500 w-0 group-hover:w-full transition-all duration-300 ease-out"></span>
                         <span className="relative z-10 text-green-500 group-hover:text-white">Book Your Game</span>

@@ -40,7 +40,7 @@ const CoachArena = () => {
             
           </div>
           <p className="text-gray-600 leading-relaxed text-center mt-6">
-            Our world-class arena is equipped with premium facilities, providing a perfect environment for players and spectators alike. <span className="font-bold text-green-500">AG Khan Cricket Academy</span>, Bikaner's first <span className="font-bold text-green-500">360-Degree Turf</span>, offers a cutting-edge experience with a 360° view and high-tech training setups. As Bikaner's first high-tech cricket academy, it combines modern technology with a vibrant atmosphere, making the <span className="font-bold text-green-500">PowerPlay Cricket Stadium</span> the ultimate destination for cricket enthusiasts.          </p>
+            Our world-class arena is equipped with premium facilities, providing a perfect environment for players and spectators alike. <span className="font-bold text-green-500">AG Khan Cricket Academy</span>, Bikaner&rsquo;s first <span className="font-bold text-green-500">360-Degree Turf</span>, offers a cutting-edge experience with a 360° view and high-tech training setups. As Bikaner&rsquo;s first high-tech cricket academy, it combines modern technology with a vibrant atmosphere, making the <span className="font-bold text-green-500">PowerPlay Cricket Stadium</span> the ultimate destination for cricket enthusiasts.          </p>
         </div>
       </div>
     </div>
