@@ -11,32 +11,31 @@ const About = () => {
             { id: 'players', endValue: 500 },
             { id: 'satisfaction', endValue: 100 }
         ];
-    
+
         counters.forEach(counter => {
             const element = document.getElementById(counter.id);
-    
+
             if (element) {
-                let startValue = 1;
-                const duration = 1000; // 2 seconds
-                const steps = counter.endValue - startValue;
-                const incrementPerFrame = steps / (duration / 16); // 16ms per frame (~60 FPS)
+                const startValue = 1; // Changed `let` to `const`
+                const duration = 1500; // Animation duration in ms
+                const incrementPerFrame = (counter.endValue - startValue) / (duration / 16); // 16ms/frame (~60FPS)
                 let currentValue = startValue;
-    
+
                 const updateCounter = () => {
                     currentValue += incrementPerFrame;
-    
+
                     if (currentValue >= counter.endValue) {
                         currentValue = counter.endValue;
                     }
-    
+
                     element.textContent = Math.round(currentValue).toString();
-    
+
                     if (currentValue < counter.endValue) {
-                        requestAnimationFrame(updateCounter); // Continue until target is reached
+                        requestAnimationFrame(updateCounter);
                     }
                 };
-    
-                requestAnimationFrame(updateCounter); // Start the animation
+
+                requestAnimationFrame(updateCounter);
             }
         });
     }, []);
@@ -51,9 +50,7 @@ const About = () => {
                             Our Vision for <span className="text-green-500">Cricket Excellence</span>
                         </h1>
                         <p className="text-lg text-gray-600 leading-relaxed">
-                            At Powerplay Cricket Stadium, we are committed to transforming the cricketing landscape by offering an unmatched experience for players of every skill level, from passionate beginners to seasoned professionals. Our mission is to redefine what it means to play, practice, and compete in cricket by creating a world-class environment designed to inspire and elevate the love for the game. We provide top-notch facilities that include meticulously maintained, professional-grade turf wickets, state-of-the-art training tools, and modern amenities that ensure players perform at their absolute best.
-
-                            With a deep focus on nurturing talent, fostering teamwork, and building unforgettable memories, Powerplay Cricket Stadium stands as a beacon for cricket enthusiasts. Beyond just a venue, we aim to be a catalyst for growth, offering a space where dreams are nurtured, skills are honed, and camaraderie thrives. Whether you’re a young cricketer with aspirations to reach the pinnacle of the sport or a team searching for the ultimate ground to showcase your prowess, we promise an experience that goes above and beyond expectations. Powerplay Cricket Stadium is not just a facility—it’s a journey of cricketing excellence that leaves a lasting legacy.
+                            At Powerplay Cricket Stadium, we’re redefining cricket in Bikaner with our 360-degree turf and premier high-tech facilities, powered by <span className="text-green-500 font-semibold">AG Khan Cricket Academy</span>. Whether you’re an aspiring cricketer or a seasoned player, experience unmatched training tools, meticulously maintained grounds, and professional-grade amenities. Beyond a venue, we are committed to nurturing talent, fostering camaraderie, and creating lasting memories for cricket enthusiasts.
                         </p>
                     </div>
 
